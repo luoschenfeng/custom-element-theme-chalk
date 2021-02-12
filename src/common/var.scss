@@ -45,7 +45,8 @@ $--border-color-extra-light: #d8dfe7 !default; //change
 $--background-color-base:rgba(10, 60, 78, 0.9) !default;
 $--hover-background-color:rgba(105, 126, 141, 0.4) !default;
 $--pop-background-color:rgba(6, 73, 92, 0.9) !default; // new pop
-$--input-background-color: rgba(53, 99, 125, 0.5) !default;
+$--input-background-color: transparent !default;
+// $--input-background-color: rgba(53, 99, 125, 0.5) !default;
 
 /* Disable base
 -------------------------- */
