@@ -1,6 +1,6 @@
 {
   "name": "element-theme-chalk",
-  "version": "2.15.0",
+  "version": "1.0.01",
   "description": "Element component chalk theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
@@ -13,18 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElementUI/theme-chalk.git"
+    "url": "https://github.com/luoschenfeng/custom-element-theme-chalk"
   },
   "keywords": [
     "element",
     "theme"
   ],
-  "author": "yi.shyang@ele.me",
+  "author": "luoschenfeng",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ElementUI/theme-chalk/issues"
-  },
-  "homepage": "https://github.com/ElementUI/theme-chalk#readme",
+  "homepage": "https://github.com/luoschenfeng/custom-element-theme-chalk#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
