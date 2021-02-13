@@ -282,7 +282,7 @@
 
   @include e((append, prepend)) {
     background-color: $--input-background-color;
-    color: $--color-info;
+    color: $--color-text-placeholder;
     vertical-align: middle;
     display: table-cell;
     position: relative;

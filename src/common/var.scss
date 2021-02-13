@@ -16,41 +16,42 @@ $--color-transition-base: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !defau
 /* Color
 -------------------------- */
 /// color|1|Brand Color|0
-$--color-primary: #16c9ab !default; // change
+$--color-primary: #ff0da9 !default; // change bb479a
 /// color|1|Background Color|4
-$--color-white: #ecf0f3 !default; // change
+$--color-white: #f0e9ee !default; // change
 /// color|1|Background Color|4
 $--color-black: #000 !default;
 /// color|1|Font Color|2
-$--color-text-primary: #c3cfd8 !default; //change
+$--color-text-primary: #c7b6c1 !default; //change c3cfd8
 /// color|1|Font Color|2
-$--color-text-regular: #a5b7c5 !default; //change
+$--color-text-regular: #aa819d !default; //change
 /// color|1|Font Color|2
-$--color-text-secondary: #8f9fad !default; //change
+$--color-text-secondary: #884e76 !default; //change
 /// color|1|Font Color|2
-$--color-text-placeholder: #667a80 !default; //change
+$--color-text-placeholder: #682854 !default; //change
+$--font-color-disabled-base: #473642 !default;
 
 /// color|1|Border Color|3
-$--border-color-base: #60788a !default; //change
+$--border-color-base: #913675 !default; //change
 /// color|1|Border Color|3
-$--border-color-light: #93a9b8 !default; //change
+$--border-color-light: #ac3187 !default; //change
 /// color|1|Border Color|3
-$--border-color-lighter: #c7d1d8 !default; //change
+$--border-color-lighter: #b37fa1 !default; //change
 $--border-color-hover: $--border-color-lighter !default;
 /// color|1|Border Color|3
-$--border-color-extra-light: #d8dfe7 !default; //change
+$--border-color-extra-light: #d4bdcd !default; //change
 
 // Background
 /// color|1|Background Color|4
-$--background-color-base:rgba(10, 60, 78, 0.9) !default;
-$--hover-background-color:rgba(105, 126, 141, 0.4) !default;
-$--pop-background-color:rgba(6, 73, 92, 0.9) !default; // new pop
+$--background-color-base:rgba(60, 15, 37, 0.9) !default;
+$--hover-background-color:rgba(129, 63, 114, 0.4) !default;
+$--pop-background-color:rgba(75, 20, 45, 0.9) !default; // new pop
 $--input-background-color: transparent !default;
 // $--input-background-color: rgba(53, 99, 125, 0.5) !default;
 
 /* Disable base
 -------------------------- */
-$--disabled-fill-base: rgba(128, 147, 147, 0.4) !default;
+$--disabled-fill-base: rgba(71, 59, 64, 0.4) !default;
 $--disabled-color-base: $--color-text-placeholder !default;
 $--disabled-border-base: $--border-color-light !default;
 
@@ -68,7 +69,7 @@ $--color-success:#43c37d !default;
 /// color|1|Functional Color|1
 $--color-warning: #c0984a !default;
 /// color|1|Functional Color|1
-$--color-danger:#ca5c5c !default;
+$--color-danger:#d82121 !default;
 /// color|1|Functional Color|1
 $--color-info: #a8bac2 !default;
 
@@ -77,10 +78,10 @@ $--color-warning-light: mix($--color-white, $--color-warning, 75%) !default;
 $--color-danger-light: mix($--color-white, $--color-danger, 75%) !default;
 $--color-info-light: mix($--color-white, $--color-info, 75%) !default;
 
-$--color-success-lighter: mix($--background-color-base, $--color-success, 85%) !default;
-$--color-warning-lighter: mix($--background-color-base, $--color-warning, 85%) !default;
-$--color-danger-lighter: mix($--background-color-base, $--color-danger, 85%) !default;
-$--color-info-lighter: mix($--background-color-base, $--color-info, 85%) !default;
+$--color-success-lighter: mix($--background-color-base, $--color-success, 75%) !default;
+$--color-warning-lighter: mix($--background-color-base, $--color-warning, 75%) !default;
+$--color-danger-lighter: mix($--background-color-base, $--color-danger, 75%) !default;
+$--color-info-lighter: mix($--background-color-base, $--color-info, 75%) !default;
 
 /* Link
 -------------------------- */
@@ -137,7 +138,6 @@ $--font-weight-secondary: 100 !default;
 $--font-line-height-primary: 24px !default;
 /// fontLineHeight|1|Line Height|2
 $--font-line-height-secondary: 16px !default;
-$--font-color-disabled-base: #bbb !default;
 
 /* Size
 -------------------------- */
@@ -312,7 +312,7 @@ $--select-group-font-size: 12px !default;
 
 $--select-dropdown-background: $--pop-background-color !default;
 $--select-dropdown-shadow: $--box-shadow-light !default;
-$--select-dropdown-empty-color: #999 !default;
+$--select-dropdown-empty-color: $--color-text-placeholder !default;
 /// height||Other|4
 $--select-dropdown-max-height: 274px !default;
 $--select-dropdown-padding: 6px 0 !default;
@@ -487,7 +487,7 @@ $--cascader-menu-shadow: $--box-shadow-light !default;
 $--cascader-node-background-hover: $--hover-background-color !default;
 $--cascader-node-color-disabled:$--color-text-placeholder !default;
 $--cascader-color-empty:$--color-text-placeholder !default;
-$--cascader-tag-background: #f0f2f5;
+$--cascader-tag-background: $--background-color-base;
 
 /* Group
 -------------------------- */
@@ -619,7 +619,7 @@ $--switch-button-size: 16px !default;
 /* Dialog
 -------------------------- */
 $--dialog-background-color: $--pop-background-color !default;
-$--dialog-box-shadow: 0 1px 3px rgba(6, 73, 92, 0.12) !default;
+$--dialog-box-shadow: $--box-shadow-base !default;
 /// fontSize||Font|1
 $--dialog-title-font-size: $--font-size-large !default;
 /// fontSize||Font|1
@@ -642,8 +642,8 @@ $--table-header-font-color: $--color-text-secondary !default;
 $--table-row-hover-background-color: $--hover-background-color !default;
 $--table-current-row-background-color: $--hover-background-color !default;
 /// color||Color|0
-$--table-header-background-color: mix($--disabled-fill-base, $--background-color-base, 50) !default;
-$--table-fixed-box-shadow: 0 0 10px rgba(6, 73, 92, 0.12) !default;
+$--table-header-background-color: mix($--disabled-fill-base, $--background-color-base, 80) !default;
+$--table-fixed-box-shadow: $--box-shadow-base !default;
 
 /* Pagination
 -------------------------- */
@@ -831,8 +831,8 @@ $--loading-fullscreen-spinner-size: 50px !default;
 
 /* Scrollbar
 -------------------------- */
-$--scrollbar-background-color: rgba($--color-text-secondary, 0.3) !default;
-$--scrollbar-hover-background-color: rgba($--color-text-secondary, 0.5) !default;
+$--scrollbar-background-color: mix($--color-white, $--hover-background-color, 50%) !default;
+$--scrollbar-hover-background-color: mix($--color-white, $--hover-background-color, 70%);
 
 /* Carousel
 -------------------------- */
