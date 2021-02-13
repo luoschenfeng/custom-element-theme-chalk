@@ -33,7 +33,7 @@
   &:hover,
   &:focus {
     color: $--color-primary;
-    border-color: $--color-primary-light-7;
+    border-color: $--border-color-light;
   }
 
   &:active {
@@ -55,7 +55,7 @@
   @include when(plain) {
     &:hover,
     &:focus {
-      background: $--hover-background-color;
+      background: rgba($--hover-background-color, 0.2);
       border-color: $--color-primary;
       color: $--color-primary;
     }
